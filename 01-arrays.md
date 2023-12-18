@@ -2,15 +2,19 @@
 
 ## Grundsätzliches
 
-Mit den bsiherigen Datentypen, die wir kennen, können wir lediglich einzelne Werte in Variablen speichern: Sei es ein Geburtstdatum oder ein Name...
+Mit den bisherigen Datentypen, die wir kennen, können wir lediglich einzelne Werte in Variablen speichern: Sei es ein Geburtstdatum oder ein Name...
 
 Oft ist es aber notwendig, sich mehrere Werte zu merken: zB eine Bestenliste bei einem Rennen. 
 
-Will man also mehrere Datensätze eines bestimmten Datentyps speichern, braucht man eine Collection. Eine Collection ist ein Behälter für eine Ansammlung von Daten.
+Will man also mehrere Datensätze eines bestimmten Datentyps speichern, braucht man eine sogennante Collection. Eine Collection ist ein Behälter für eine Ansammlung von Daten desselben Datentyps.
 
-Ein Array ist eine solche Collection mit der speziellen Eigenschaft, dass die Länge nach der Initialisierung nicht mehr verändert werden kann.
+Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 
-ACHTUNG! Bei einem Array handelt es sich um eine Folge von Werte. Daher ist auch die Reihenfolge der Elemente relevant. Diese wird aufgrund des Index bestimmt. Das erste Element ist immer an Position 0 (Index == 0), ...
+## Die wichtigsten Eigenschaften eines Arrays
+
+* **fixe Länge**, die bei der Initialisierung definiert wird
+* der Zugriff auf Elemente erfolgt anhand eines Index (Position im Array), so ist die **Reihenfolge der Elemente wichtig**
+* das **erste Element** befindet sich immer an der **Position 0** (Index == 0)
 
 ![Array und Indices](img/07-01-Array-Indices.png)
 
@@ -37,7 +41,7 @@ int[] intArray = new int[8];
 #### Java
 
 ```Java
-String stringArray[] = {"Hello", "World", "!"};
+String[] stringArray = {"Hello", "World", "!"};
 ```
 
 #### C#
@@ -73,7 +77,9 @@ Verändern kann man den Wert auf dieselbe Weise:
 #### Java
 
 ```Java
-intArray[0] = 4; // Der Index startet bei 0!
+int[] intArray = new int[8];
+
+intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
 ```
 
 #### C#
