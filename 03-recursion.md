@@ -4,10 +4,10 @@
 
 Dieses Bild stellt dar, wie man in einem Video/ein Foto eine endlose Rekursion: man filmt/fotografiert den Bildschirm, der darstellt, was man gerade filmt/fotografiert... ;-)
 
-Wozu Rekursion?
+**Wozu Rekursion?**
 Grundsätzlich sind alle Fälle iterativ zu lösen, allerdings macht es manchmal Sinn den Weg über die Rekursion zu überlegen, weil z.B. der Quellcode dadurch deutlich lesbarer und kürzer wird.
 
-Ein Paradebeispiel für die Rekursion ist das Durchlaufen eines Baumes.
+Ein Paradebeispiel für die Rekursion ist das Durchlaufen eines Baumes. Ein weiterer Paradebeispiel sind die Sortieralgorithmen MergeSort und Quicksort.
 
 Da die Rekursion darauf beruht, dass sich eine Methode selbst aufruft, würde dies zu einem endlosen Programm führen. Also liegt der Kern der Rekursion in der Abbruchbedingung! Diese muss gut überlegt sein, um sicherzustellen, dass das Programm aus der Rekursion kommt.
 
