@@ -2,7 +2,18 @@
 
 ![Video-Rekursion](img/07-14-video-recursion.png)
 
-Dieses Bild stellt dar, wie man in einem Video eine endlose Rekursion: man filmt den Bildschirm, der darstellt, was man gerade filmt... ;-)
+Dieses Bild stellt dar, wie man in einem Video/ein Foto eine endlose Rekursion: man filmt/fotografiert den Bildschirm, der darstellt, was man gerade filmt/fotografiert... ;-)
+
+Wozu Rekursion?
+Grundsätzlich sind alle Fälle iterativ zu lösen, allerdings macht es manchmal Sinn den Weg über die Rekursion zu überlegen, weil z.B. der Quellcode dadurch deutlich lesbarer und kürzer wird.
+
+Ein Paradebeispiel für die Rekursion ist das Durchlaufen eines Baumes.
+
+Da die Rekursion darauf beruht, dass sich eine Methode selbst aufruft, würde dies zu einem endlosen Programm führen. Also liegt der Kern der Rekursion in der Abbruchbedingung! Diese muss gut überlegt sein, um sicherzustellen, dass das Programm aus der Rekursion kommt.
+
+Würde das Programm nicht aus der Rekursion herauskommen, würde es zu einem Memory-Overflow kommen. Mittlerweile sichern sich Programmiersprachen ab, indem erkannt wird, ob man sich in einer endlosen Rekursion befindet und brechen das Programm mit einem Fehler ab.
+
+Im Vergleich zu einer iterativen Schleife, verbraucht Rekursion immer mehr Speicher, weil die Variablen in der Methode bei jeder Rekursion neu instanziert werden, aber nicht mehr freigegeben werden, solange die Rekursion nicht endet. In iterativen Schleifen werden die Variablen, die in der Schleife instanziert werden, immer nach Ende der Iteration wieder freigegeben.
 
 ## Einführendes Beispiel
 
