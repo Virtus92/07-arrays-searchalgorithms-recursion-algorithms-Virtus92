@@ -2,11 +2,12 @@
 
 ## Lernziele
 Der Teilnehmer/die Teilnehmerin kann nach erfolgreicher Absolvierung dieses Themas:
-- erklären, was Arrays, Collections und Datenstrukturen sind, insbesondere, was die Unterschiede sind
+- erklären, was Arrays und Collections sind, insbesondere, was die Unterschiede sind
 - Arrays in Programmen anwenden
 - Collections in Programmen anwenden
-- Datenstrukturen wie 
-- seinen/ihren Code erklären
+- die verschiedenen Sortieralgorithmen erklären und darstellen, wann diese sinnvoll anzuwenden sind
+- erste rekursive Programme schreiben
+- seinen\*ihren Code erklären
 - seinen Code in GitHub einchecken
 
 ## Inhaltsverzeichnis
