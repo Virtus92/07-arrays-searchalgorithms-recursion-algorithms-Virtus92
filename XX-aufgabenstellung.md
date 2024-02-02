@@ -43,3 +43,5 @@ Eine super Visualisierung zu Sortieralgorithmen findest du auf [Sortvisualizer -
 Implementiere einen Bubble Sort Algorithmus!
 
 Eine super Schritt-für-Schritt Visualisierung zu Sortieralgorithmen findest du auf [Hackerearth - Insertionsort](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/). Eine gute Erklärung zur Vorgehensweise des Bubble sort findest du auf Wikipedia: [Wikipedia - Bubble Sort](https://de.wikipedia.org/wiki/Bubblesort).
+
+Zurück zur [Startseite](README.md)

@@ -62,3 +62,5 @@ Diese Sortierung wird auf alle Sublisten wieder angewandt bis die vollständige 
 ## animierte Visualisierung von Sortieralgorithmen 
 
 [animierter Vergleich von Sortieralgorithmen](https://www.toptal.com/developers/sorting-algorithms)
+
+Zurück zur [Startseite](README.md)

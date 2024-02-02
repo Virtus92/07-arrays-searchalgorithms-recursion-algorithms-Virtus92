@@ -272,3 +272,5 @@ static void down1(int n) {
 Am besten zeichnest du den Rekursionsbaum und den Callstack, um besser zu verstehen, was dieses Programm genau macht.
 
 [TODO] Recursion Challenges, Merge Sort, ...
+
+Zurück zur [Startseite](README.md)
