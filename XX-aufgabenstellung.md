@@ -16,6 +16,15 @@ Errechne dann den Notendurchschnitt und gib ihn in der Konsole aus.
 Write a program that first reads the size n of the array and then reads n grades from the console and put the grades in the array.
 Then calculate the average and display it in the console.
 
+#### Abnahmekriterien
+
+- Die Variablennamen sind aussagekräftig
+- Die gewählten Datentypen sind sinnvoll
+- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Das Programm erfüllt die Anforderungen
+- Der\*die Teilnehmer\*in kann den Code erklären
+- Der Code ist in GITHub gepuscht
+
 ### Übung/Exercise 7.2: Bingo Card Generator
 
 Die Regeln für eine Bingo-Karte sind einfach: Eine Bingo Karte besteht aus 24 eindeutigen zufälligen Nummern:
@@ -30,6 +39,16 @@ Die Regeln für eine Bingo-Karte sind einfach: Eine Bingo Karte besteht aus 24 e
 
 Schreibe ein kleines Programm, das eine Bingo-Karte zufällig erzeugt und formatiert in die Konsole ausgibt. 
 
+#### Abnahmekriterien
+
+- Die Variablennamen sind aussagekräftig
+- Die gewählten Datentypen sind sinnvoll
+- Die Darstellung der Bingo-Karte in der Konsole entspricht der Darstellung laut Bild
+- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Das Programm erfüllt die Anforderungen
+- Der\*die Teilnehmer\*in kann den Code erklären
+- Der Code ist in GITHub gepuscht
+
 ## Sortieralgorithmen
 
 ### Übung/Exercise 7.3: Insertion Sort
@@ -38,10 +57,27 @@ Implementiere einen Insertion Sort Algorithmus!
 
 Eine super Visualisierung zu Sortieralgorithmen findest du auf [Sortvisualizer - Insertionsort](https://sortvisualizer.com/insertionsort/). Eine gute Erklärung zur Vorgehensweise des Insertion sort findest du auf Wikipedia: [Wikipedia - Insertion Sort](https://de.wikipedia.org/wiki/Insertionsort).
 
+#### Abnahmekriterien
+
+- Die Variablennamen sind aussagekräftig
+- Die gewählten Datentypen sind sinnvoll
+- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Das Programm erfüllt die Anforderungen
+- Der\*die Teilnehmer\*in kann den Code und den Algorithmus erklären
+- Der Code ist in GITHub gepuscht
+
+
 ### Übung/Exercise 7.4: Bubble Sort
 
 Implementiere einen Bubble Sort Algorithmus!
 
 Eine super Schritt-für-Schritt Visualisierung zu Sortieralgorithmen findest du auf [Hackerearth - Insertionsort](https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/). Eine gute Erklärung zur Vorgehensweise des Bubble sort findest du auf Wikipedia: [Wikipedia - Bubble Sort](https://de.wikipedia.org/wiki/Bubblesort).
+
+- Die Variablennamen sind aussagekräftig
+- Die gewählten Datentypen sind sinnvoll
+- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Das Programm erfüllt die Anforderungen
+- Der\*die Teilnehmer\*in kann den Code und den Algorithmus bzw. wann dieser einen Sinn macht erklären 
+- Der Code ist in GITHub gepuscht
 
 Zurück zur [Startseite](README.md)
