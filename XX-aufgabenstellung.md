@@ -20,9 +20,9 @@ Then calculate the average and display it in the console.
 
 - Die Variablennamen sind aussagekräftig
 - Die gewählten Datentypen sind sinnvoll
-- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Für den:die Anwender:in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
 - Das Programm erfüllt die Anforderungen
-- Der\*die Teilnehmer\*in kann den Code erklären
+- Der:die Teilnehmer:in kann den Code erklären
 - Der Code ist in GITHub gepuscht
 
 ### Übung/Exercise 7.2: Bingo Card Generator
@@ -44,9 +44,9 @@ Schreibe ein kleines Programm, das eine Bingo-Karte zufällig erzeugt und format
 - Die Variablennamen sind aussagekräftig
 - Die gewählten Datentypen sind sinnvoll
 - Die Darstellung der Bingo-Karte in der Konsole entspricht der Darstellung laut Bild
-- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Für den:die Anwender:in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
 - Das Programm erfüllt die Anforderungen
-- Der\*die Teilnehmer\*in kann den Code erklären
+- Der:die Teilnehmer:in kann den Code erklären
 - Der Code ist in GITHub gepuscht
 
 ## Sortieralgorithmen
@@ -61,9 +61,9 @@ Eine super Visualisierung zu Sortieralgorithmen findest du auf [Sortvisualizer -
 
 - Die Variablennamen sind aussagekräftig
 - Die gewählten Datentypen sind sinnvoll
-- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Für den:die Anwender:in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
 - Das Programm erfüllt die Anforderungen
-- Der\*die Teilnehmer\*in kann den Code und den Algorithmus erklären
+- Der:die Teilnehmer:in kann den Code und den Algorithmus erklären
 - Der Code ist in GITHub gepuscht
 
 
@@ -75,9 +75,9 @@ Eine super Schritt-für-Schritt Visualisierung zu Sortieralgorithmen findest du 
 
 - Die Variablennamen sind aussagekräftig
 - Die gewählten Datentypen sind sinnvoll
-- Für den\*die Anwender\*in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
+- Für den:die Anwender:in des Programms ist die Interaktion nachvollziehbar: man weiß zu jedem Zeitpunkt, was zu tun ist bzw. was das Programm tut bzw. getan hat.
 - Das Programm erfüllt die Anforderungen
-- Der\*die Teilnehmer\*in kann den Code und den Algorithmus bzw. wann dieser einen Sinn macht erklären 
+- Der:die Teilnehmer:in kann den Code und den Algorithmus bzw. wann dieser einen Sinn macht erklären 
 - Der Code ist in GITHub gepuscht
 
 Zurück zur [Startseite](README.md)
