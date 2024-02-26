@@ -32,9 +32,9 @@ Wünsche zur Verfügung haben ;)
 
 Wenn man dieses Beispiel programmiert, würde es wie folgt aussehen:
 
-### Java
-
 ```Java
+// Java
+
 public static void fulfillThreeWishes() {
     System.out.println(getFerrari());
     System.out.println(getLuxuryVilla());
@@ -50,9 +50,8 @@ public static String getLuxuryVilla() {
 }
 ```
 
-### C#
-
-```c#
+```csharp
+// C#
 
 ```
 
@@ -102,9 +101,9 @@ Die formale rekursive Definition lautet:
 
 Programmiert schaut die Implementierung folgendermaßen aus:
 
-### Java
-
 ```Java
+// Java
+
 int factorial(int n) {
     if (n <= 1)                     // Abbruchbedingung
         return 1;
@@ -113,9 +112,8 @@ int factorial(int n) {
 }
 ```
 
-### C#
-
-```c#
+```csharp
+// C#
 
 ```
 
@@ -136,9 +134,9 @@ Datenblock auf den aktuellen gepackt.
 
 Jede Aufgabe, die rekursiv gelöst werden kann, kann auch iterativ gelöst werden. Aber warum lernt  man dann die Rekursivität, wenn man alles iterativ lösen könnte?
 
-### Java
-
 ```Java
+// Java
+
 public static int factorialIterative(int n) {
     int result = 1;
     if (n > 1) { 
@@ -150,9 +148,8 @@ public static int factorialIterative(int n) {
 }
 ```
 
-### C#
-
-```c#
+```csharp
+// C#
 
 ```
 
@@ -165,9 +162,9 @@ Nun wollen wir versuchen, die Wünsche auf 3 zu begrenzen, d.h. “wieder drei W
 - dieser wird beim nochmaligen Methodenaufruf heruntergezählt
 - wenn der Zähler 0 erreicht, wird die Methode beendet
 
-### Java
-
 ```Java
+// Java
+
 public static void main(String[] args) {
     wish(3);
 }
@@ -191,9 +188,8 @@ static String getFerrari() { return "Ferrari"; }
 static String getLuxuryVilla() { return "Luxury Villa"; }
 ```
 
-### C#
-
-```c#
+```csharp
+// C#
 
 ```
 
@@ -207,9 +203,9 @@ Addition ihrer beiden vorherigen Zahlen ergibt:
 
 Implementiert sieht die Fibonacci-Folge wie folgt aus:
 
-### Java
-
 ```Java
+// Java
+
 static int fibonacci(int n) {
     if (n == 0) return 0;
     if (n == 1) return 1;
@@ -217,15 +213,12 @@ static int fibonacci(int n) {
 }
 ```
 
-### C#
-
-```c#
+```csharp
+// C#
 
 ```
 
 ## Faktorielle berechnen
-
-### Java
 
 ```Java
     // Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
@@ -240,15 +233,12 @@ static int fibonacci(int n) {
     }
 ```
 
-### C#
-
-```c#
+```csharp
+// C#
 
 ```
 
 ## Summe aller Elemente eines Arrays berechnen
-
-### Java
 
 ```Java
 // Java
@@ -260,6 +250,11 @@ static int fibonacci(int n) {
             return array[index] + sumArray(array, index - 1);
         }
     }
+```
+
+```csharp
+// C#
+
 ```
 
 Am besten zeichnest du den Rekursionsbaum und den Callstack, um besser zu verstehen, was dieses Programm genau macht.
