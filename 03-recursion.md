@@ -223,54 +223,45 @@ static int fibonacci(int n) {
 
 ```
 
-## Quizfragen:
+## Faktorielle berechnen
 
-### Beispiel 1: Was wird bei down1(10) ausgegeben?
-
-#### Java
+### Java
 
 ```Java
-static void down1(int n) {
-    if (n <=0) { //end of recursion
-        return;
+    // Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
+    public static int factorial(int n) {
+        // Basisfall: Fakultät von 0 oder 1 ist 1
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
+            return n * factorial(n - 1);
+        }
     }
-    
-    System.out.print(n + ", ");
-    down1(n-1);
-}
 ```
 
-#### C#
+### C#
 
 ```c#
 
 ```
 
-Am besten zeichnest du den Rekursionsbaum und den Callstack, um besser zu verstehen, was dieses Programm genau macht.
+## Summe aller Elemente eines Arrays berechnen
 
-### Beispiel 2: Was wird bei down2(10) ausgegeben?
-
-#### Java
+### Java
 
 ```Java
-static void down1(int n) {
-    if (n <=0) { //end of recursion
-        return;
+// Java
+
+    public static int sumArray(int[] array, int index) {
+        if (index < 0) {
+            return 0;
+        } else {
+            return array[index] + sumArray(array, index - 1);
+        }
     }
-    
-    down1(n-1);
-    System.out.print(n + ", ");
-}
-```
-
-#### C#
-
-```c#
-
 ```
 
 Am besten zeichnest du den Rekursionsbaum und den Callstack, um besser zu verstehen, was dieses Programm genau macht.
-
-[TODO] Recursion Challenges, Merge Sort, ...
 
 Zurück zur [Startseite](README.md)
