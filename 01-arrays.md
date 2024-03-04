@@ -22,7 +22,7 @@ Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 
 In höheren Programmierprachen kann ein Array auf folgende Art und Weisen erstellt werden:
 
-### Ein Array aus int mit Länge 8
+### Ein Array aus ganzen Zahlen mit Länge 8
 
 #### Java
 
@@ -33,7 +33,7 @@ int[] intArray = new int[8];
 #### C#
 
 ```c#
-
+int[] intArray = new int[8];
 ```
 
 ### Ein Array aus Strings mit 3 Elementen: "Hello", "World" und "!"
@@ -47,23 +47,25 @@ String[] stringArray = {"Hello", "World", "!"};
 #### C#
 
 ```c#
-
+string[] stringArray = ["Hello", "World", "!"];
 ```
 
 ### Zugriff auf ein Element
 
-Um nun auf ein Element des Arrays zuzugreifen wird der Index gebraucht. Das Element mit dem Index 3 erhalte ich mit folgender Zeile:
+Um nun auf ein Element des Arrays zuzugreifen wird der Index verwendet. Wie oben angeführt ist das erste Element an der Position 0. Das Element mit dem Index 3 erhalte ich mit folgender Zeile:
 
 #### Java
 
 ```Java
-System.out.println(intArray[3]);
+int[] intArray = {1,2,3,4,5,6,7,8};
+System.out.println(intArray[3]); // Hier wird die Zahl mit dem Index 3 ausgegeben (ACHTUNG! In einem Array ist das erste Element am Index 0!!!), also wird hier die Zahl 4 ausgegeben!
 ```
 
 #### C#
 
 ```c#
-
+int[] intArray = [1,2,3,4,5,6,7,8];
+Console.WriteLine(intArray[3]);
 ```
 
 ACHTUNG! Wenn man einen Zugriff mit einem Index größer oder gleich der Größe des Arrays versucht wird ein Fehler, eine sogenannte Exception, ausgeworfen, da man versucht, auf ein Element zuzugreifen, das nicht im Array zu finden ist.
@@ -85,7 +87,9 @@ intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
 #### C#
 
 ```c#
+int[] intArray = new int[8];
 
+intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
 ```
 
 ## 2-Dimensionale Arrays
@@ -102,7 +106,7 @@ String[][] twoDimensionalArray = new String[3][5];
 #### C#
 
 ```c#
-
+string[,] twoDimensionalArray = new string[3,5];
 ```
 
 Ein 2-Dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
@@ -112,8 +116,8 @@ Ein 2-Dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werd
 ```Java
 int[][] field = new int[3][3]; // init 3x3 field
 for (int i = 0; i < field.length;i++){ // iterate through lines
-for (int j = 0; j < field[i].length; j++){ // iterate through columns of current line
-System.out.print(" " + field[i][j] + " "); // print current column of current line
+    for (int j = 0; j < field[i].length; j++){ // iterate through columns of current line
+        System.out.print(" " + field[i][j] + " "); // print current column of current line
 }
 System.out.println(); // line break
 }
@@ -122,7 +126,12 @@ System.out.println(); // line break
 #### C#
 
 ```c#
-
+int[,] field = new int[3,3];
+for (int i = 0; i <field.Length;i++){
+    for (int j = 0; j < field[i].length; j++){
+        Console.Writeline(" " + field[i,j] + " ")
+    }
+}
 ```
 
 Zurück zur [Startseite](README.md)

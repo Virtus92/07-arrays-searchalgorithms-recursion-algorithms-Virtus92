@@ -53,6 +53,19 @@ public static String getLuxuryVilla() {
 ```csharp
 // C#
 
+public static void fulfillThreeWishes() {
+    Console.Writeline(getFerrari());
+    Console.Writeline(getLuxuryVilla());
+    fulfillThreeWishes();
+}
+
+public static String getFerrari() {
+    return "Ferrari";
+}
+
+public static String getLuxuryVilla() {
+    return "Luxury Villa";
+}
 ```
 
 Welches Problem besteht hier?
@@ -115,6 +128,12 @@ int factorial(int n) {
 ```csharp
 // C#
 
+int factorial(int n) {
+    if (n <= 1)                     // Abbruchbedingung
+        return 1;
+    return n * factorial(n - 1);    // Rekursiver Aufruf mit Änderung des Parameters 
+                                    // Wichtig dabei ist, dass das Problem bei jeder Rekursion kleiner wird, damit die Rekursion ein Ende finden kann.
+}
 ```
 
 ## Call Stack
@@ -151,6 +170,15 @@ public static int factorialIterative(int n) {
 ```csharp
 // C#
 
+public static int factorialIterative(int n) {
+    int result = 1;
+    if (n > 1) { 
+        for (int i = 1; i <= n; i++) {
+            result = result * i;
+        }
+    }
+    return result;
+}
 ```
 
 Wie man an der iterativen Lösung der Fakultät erkennen kann, schaut die rekursive Lösung viel einfacher aus und ist auch deutlich kürzer!
@@ -191,6 +219,27 @@ static String getLuxuryVilla() { return "Luxury Villa"; }
 ```csharp
 // C#
 
+public static void main(String[] args) {
+    wish(3);
+}
+
+static void wish(int n) {
+    if (n <= 0) {
+        Console.Writeline("Sorry,you have no more wishes");
+        return;
+    }
+    
+    if (n % 2 == 0) {
+        Console.Writeline(getFerrari());
+    } else {
+        Console.Writeline(getLuxuryVilla());
+    }
+    
+    wish(n - 1);
+}
+
+static string getFerrari() { return "Ferrari"; }
+static string getLuxuryVilla() { return "Luxury Villa"; }
 ```
 
 ## Fibonacci-Folge
@@ -216,26 +265,43 @@ static int fibonacci(int n) {
 ```csharp
 // C#
 
+static int fibonacci(int n) {
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
 ```
 
 ## Faktorielle berechnen
 
 ```Java
-    // Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
-    public static int factorial(int n) {
-        // Basisfall: Fakultät von 0 oder 1 ist 1
-        if (n == 0 || n == 1) {
-            return 1;
-        } else {
-            // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
-            return n * factorial(n - 1);
-        }
+// Java 
+
+// Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
+public static int factorial(int n) {
+    // Basisfall: Fakultät von 0 oder 1 ist 1
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
+        return n * factorial(n - 1);
     }
+}
 ```
 
 ```csharp
 // C#
 
+// Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
+public static int factorial(int n) {
+    // Basisfall: Fakultät von 0 oder 1 ist 1
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
+        return n * factorial(n - 1);
+    }
+}
 ```
 
 ## Summe aller Elemente eines Arrays berechnen
@@ -243,18 +309,25 @@ static int fibonacci(int n) {
 ```Java
 // Java
 
-    public static int sumArray(int[] array, int index) {
-        if (index < 0) {
-            return 0;
-        } else {
-            return array[index] + sumArray(array, index - 1);
-        }
+public static int sumArray(int[] array, int index) {
+    if (index < 0) {
+        return 0;
+    } else {
+        return array[index] + sumArray(array, index - 1);
     }
+}
 ```
 
 ```csharp
 // C#
 
+public static int sumArray(int[] array, int index) {
+    if (index < 0) {
+        return 0;
+    } else {
+        return array[index] + sumArray(array, index - 1);
+    }
+}
 ```
 
 Am besten zeichnest du den Rekursionsbaum und den Callstack, um besser zu verstehen, was dieses Programm genau macht.
