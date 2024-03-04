@@ -113,7 +113,7 @@ String[][] twoDimensionalArray = new String[3][5];
 string[,] twoDimensionalArray = new string[3,5];
 ```
 
-Ein 2-Dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
+Ein 2-dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
 
 ```Java
 // Java
