@@ -20,9 +20,11 @@ Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 
 ## Arrays Java / C#
 
-In höheren Programmierprachen kann ein Array auf folgende Art und Weisen erstellt werden:
+### Array deklarieren
 
-### Ein Array aus ganzen Zahlen mit Länge 8
+In höheren Programmierprachen kann ein Array auf folgende Art und Weisen deklariert werden:
+
+#### Ein Array aus ganzen Zahlen mit Länge 8
 
 ```Java
 // Java
@@ -36,7 +38,7 @@ int[] intArray = new int[8];
 int[] intArray = new int[8];
 ```
 
-### Ein Array aus Strings mit 3 Elementen: "Hello", "World" und "!"
+#### Ein Array aus Strings mit 3 Elementen: "Hello", "World" und "!"
 
 ```Java
 // Java
@@ -76,8 +78,6 @@ ACHTUNG! Wenn man einen Zugriff mit einem Index größer oder gleich der Größe
 
 Verändern kann man den Wert auf dieselbe Weise:
 
-#### Java
-
 ```Java
 // Java
 
@@ -96,10 +96,7 @@ intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
 
 ## 2-Dimensionale Arrays
 
-Ein ***String[]*** ist auch ein Datentyp genauso wie String und int. Da man aus einem String ein Array aus Strings machen kann, kann man auch aus einem String[] ein Array
-aus String[] machen.
-
-#### Java
+Ein `String[]` ist auch ein Datentyp genauso wie String und int. Da man aus einem String ein Array aus Strings machen kann, kann man auch aus einem String[] ein Array aus String[] machen.
 
 ```Java
 // Java
@@ -113,7 +110,9 @@ String[][] twoDimensionalArray = new String[3][5];
 string[,] twoDimensionalArray = new string[3,5];
 ```
 
-Ein 2-dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
+Ein 2-dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. 
+
+z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
 
 ```Java
 // Java
@@ -122,8 +121,8 @@ int[][] field = new int[3][3]; // init 3x3 field
 for (int i = 0; i < field.length;i++){ // iterate through lines
     for (int j = 0; j < field[i].length; j++){ // iterate through columns of current line
         System.out.print(" " + field[i][j] + " "); // print current column of current line
-}
-System.out.println(); // line break
+    }
+    System.out.println(); // line break
 }
 ```
 
@@ -133,8 +132,9 @@ System.out.println(); // line break
 int[,] field = new int[3,3];
 for (int i = 0; i <field.Length;i++){
     for (int j = 0; j < field[i].length; j++){
-        Console.Writeline(" " + field[i,j] + " ")
+        Console.Write(" " + field[i,j] + " ")
     }
+    Console.WriteLine();
 }
 ```
 

@@ -54,8 +54,8 @@ public static String getLuxuryVilla() {
 // C#
 
 public static void fulfillThreeWishes() {
-    Console.Writeline(getFerrari());
-    Console.Writeline(getLuxuryVilla());
+    Console.WriteLine(getFerrari());
+    Console.WriteLine(getLuxuryVilla());
     fulfillThreeWishes();
 }
 
@@ -70,7 +70,7 @@ public static String getLuxuryVilla() {
 
 Welches Problem besteht hier?
 
-Die Methode ***fulfillThreeWishes()*** ruft sich selbst auf, also endet das Programm nie (bzw. erst wenn der Fehler Stack-Overflow ausgeworfen wird)
+Die Methode `fulfillThreeWishes()` ruft sich selbst auf, also endet das Programm nie (bzw. erst wenn der Fehler Stack-Overflow ausgeworfen wird)
 
 ## Definition
 
@@ -225,14 +225,14 @@ public static void main(String[] args) {
 
 static void wish(int n) {
     if (n <= 0) {
-        Console.Writeline("Sorry,you have no more wishes");
+        Console.WriteLine("Sorry,you have no more wishes");
         return;
     }
     
     if (n % 2 == 0) {
-        Console.Writeline(getFerrari());
+        Console.WriteLine(getFerrari());
     } else {
-        Console.Writeline(getLuxuryVilla());
+        Console.WriteLine(getLuxuryVilla());
     }
     
     wish(n - 1);
