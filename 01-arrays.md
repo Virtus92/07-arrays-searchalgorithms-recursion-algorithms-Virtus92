@@ -24,29 +24,29 @@ In höheren Programmierprachen kann ein Array auf folgende Art und Weisen erstel
 
 ### Ein Array aus ganzen Zahlen mit Länge 8
 
-#### Java
-
 ```Java
+// Java
+
 int[] intArray = new int[8];
 ```
 
-#### C#
+```csharp
+// C# 
 
-```c#
 int[] intArray = new int[8];
 ```
 
 ### Ein Array aus Strings mit 3 Elementen: "Hello", "World" und "!"
 
-#### Java
-
 ```Java
+// Java
+
 String[] stringArray = {"Hello", "World", "!"};
 ```
 
-#### C#
+```csharp
+// C# 
 
-```c#
 string[] stringArray = ["Hello", "World", "!"];
 ```
 
@@ -54,16 +54,16 @@ string[] stringArray = ["Hello", "World", "!"];
 
 Um nun auf ein Element des Arrays zuzugreifen wird der Index verwendet. Wie oben angeführt ist das erste Element an der Position 0. Das Element mit dem Index 3 erhalte ich mit folgender Zeile:
 
-#### Java
-
 ```Java
+// Java
+
 int[] intArray = {1,2,3,4,5,6,7,8};
 System.out.println(intArray[3]); // Hier wird die Zahl mit dem Index 3 ausgegeben (ACHTUNG! In einem Array ist das erste Element am Index 0!!!), also wird hier die Zahl 4 ausgegeben!
 ```
 
-#### C#
+```csharp
+// C# 
 
-```c#
 int[] intArray = [1,2,3,4,5,6,7,8];
 Console.WriteLine(intArray[3]);
 ```
@@ -79,14 +79,16 @@ Verändern kann man den Wert auf dieselbe Weise:
 #### Java
 
 ```Java
+// Java
+
 int[] intArray = new int[8];
 
 intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
 ```
 
-#### C#
+```csharp
+// C# 
 
-```c#
 int[] intArray = new int[8];
 
 intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
@@ -100,20 +102,22 @@ aus String[] machen.
 #### Java
 
 ```Java
+// Java
+
 String[][] twoDimensionalArray = new String[3][5];
 ```
 
-#### C#
+```csharp
+// C#
 
-```c#
 string[,] twoDimensionalArray = new string[3,5];
 ```
 
 Ein 2-Dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
 
-#### Java
-
 ```Java
+// Java
+
 int[][] field = new int[3][3]; // init 3x3 field
 for (int i = 0; i < field.length;i++){ // iterate through lines
     for (int j = 0; j < field[i].length; j++){ // iterate through columns of current line
@@ -123,9 +127,9 @@ System.out.println(); // line break
 }
 ```
 
-#### C#
+```csharp
+// C# 
 
-```c#
 int[,] field = new int[3,3];
 for (int i = 0; i <field.Length;i++){
     for (int j = 0; j < field[i].length; j++){
