@@ -78,11 +78,11 @@ Als Rekursion (lateinisch recurrere ‚zurücklaufen‘) wird ein prinzipiell un
 
 Kurz gesagt ist eine Rekursion eine Funktion, die sich selbst aufruft und sich selbst immer wieder neu definiert.
 
-Üblicherweise sind rekursive Vorgänge relativ kurz beschreibbar bzw.können durch eine relativ kurze Anweisung ausgelöst werden.
+Üblicherweise sind rekursive Vorgänge relativ kurz beschreibbar bzw. können durch eine relativ kurze Anweisung ausgelöst werden.
 
 ## Abbruchbedingung
 
-Der wichtigste Teil der Rekursion ist die Abbruchbedingung. Ohne diese läuft das Programm unendlich, bis die JVM verhindert, dass der Speicher des Rechners voll wird.
+Der wichtigste Teil der Rekursion ist die Abbruchbedingung. Ohne diese läuft das Programm unendlich, bis die virtuelle Maschine verhindert, dass der Speicher des Rechners voll wird.
 
 Diese muss gut durchdacht sein, um sicherzugehen, dass sie immer eintritt!
 
@@ -103,10 +103,10 @@ gleich dieser Zahl zuordnet.
 Diese Funktion ist von Natur aus rekursiv, warum?
 Man kann die Fakultät von n berechnen, indem man zuerst die Fakultät von (n-1) berechnet. Daher bildet die Berechnung von (n-1)! ein Subproblem, das wir lösen müssen, um n zu berechnen! 
 
-zB. kann 
+z.B. kann 
 - 5! durch (4! * 5 ) gelöst werden.
 - 4! kann wiederum durch (3! * 4 ) gelöst werden usw.
-- dies kann fortgesetzt werden, bis wir bei 0! = 1 landen, was unser Basisfall ist. 
+- dies kann fortgesetzt werden, bis wir bei 0! = 1 landen, was unser Basisfall ist und Abbruchbedingung. 
 
 Die formale rekursive Definition lautet:
 
@@ -117,22 +117,28 @@ Programmiert schaut die Implementierung folgendermaßen aus:
 ```Java
 // Java
 
-int factorial(int n) {
-    if (n <= 1)                     // Abbruchbedingung
+// Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
+public static int factorial(int n) {
+    // Basisfall: Fakultät von 0 oder 1 ist 1
+    if (n == 0 || n == 1) {
         return 1;
-    return n * factorial(n - 1);    // Rekursiver Aufruf mit Änderung des Parameters 
-                                    // Wichtig dabei ist, dass das Problem bei jeder Rekursion kleiner wird, damit die Rekursion ein Ende finden kann.
+    }
+    // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
+    return n * factorial(n - 1);
 }
 ```
 
 ```csharp
 // C#
 
-int factorial(int n) {
-    if (n <= 1)                     // Abbruchbedingung
+// Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
+public static int factorial(int n) {
+    // Basisfall: Fakultät von 0 oder 1 ist 1
+    if (n == 0 || n == 1) {
         return 1;
-    return n * factorial(n - 1);    // Rekursiver Aufruf mit Änderung des Parameters 
-                                    // Wichtig dabei ist, dass das Problem bei jeder Rekursion kleiner wird, damit die Rekursion ein Ende finden kann.
+    }
+    // Rekursiver Aufruf: Fakultät von n ist gleich n multipliziert mit Fakultät von (n-1)
+    return n * factorial(n - 1);
 }
 ```
 
@@ -272,38 +278,6 @@ static int fibonacci(int n) {
 }
 ```
 
-## Faktorielle berechnen
-
-```Java
-// Java 
-
-// Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
-public static int factorial(int n) {
-    // Basisfall: Fakultät von 0 oder 1 ist 1
-    if (n == 0 || n == 1) {
-        return 1;
-    } else {
-        // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
-        return n * factorial(n - 1);
-    }
-}
-```
-
-```csharp
-// C#
-
-// Methode zur Berechnung der Fakultät einer Zahl unter Verwendung von Rekursion
-public static int factorial(int n) {
-    // Basisfall: Fakultät von 0 oder 1 ist 1
-    if (n == 0 || n == 1) {
-        return 1;
-    } else {
-        // Rekursiver Fall: Fakultät von n ist n multipliziert mit Fakultät von (n-1)
-        return n * factorial(n - 1);
-    }
-}
-```
-
 ## Summe aller Elemente eines Arrays berechnen
 
 ```Java
@@ -312,9 +286,8 @@ public static int factorial(int n) {
 public static int sumArray(int[] array, int index) {
     if (index < 0) {
         return 0;
-    } else {
-        return array[index] + sumArray(array, index - 1);
     }
+    return array[index] + sumArray(array, index - 1);
 }
 ```
 
@@ -324,9 +297,8 @@ public static int sumArray(int[] array, int index) {
 public static int sumArray(int[] array, int index) {
     if (index < 0) {
         return 0;
-    } else {
-        return array[index] + sumArray(array, index - 1);
     }
+    return array[index] + sumArray(array, index - 1);
 }
 ```
 

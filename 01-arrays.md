@@ -117,12 +117,33 @@ z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
 ```Java
 // Java
 
-int[][] field = new int[3][3]; // init 3x3 field
-for (int i = 0; i < field.length;i++){ // iterate through lines
-    for (int j = 0; j < field[i].length; j++){ // iterate through columns of current line
-        System.out.print(" " + field[i][j] + " "); // print current column of current line
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int[][] field = new int[3][3]; // init 3x3 field
+        Scanner scanner = new Scanner(System.in);
+
+        // iterate through rows
+        for (int i = 0; i < field.length; i++) {
+            // iterate through columns
+            for (int j = 0; j < field[i].length; j++) {
+                System.out.println("Geben Sie bitte eine Zahl ein:");
+                field[i][j] = Integer.parseInt(scanner.nextLine());
+            }
+        }
+
+        // Inhalt des Arrays ausgeben
+        for (int i = 0; i < field.length; i++) {
+            for (int j = 0; j < field[i].length; j++) {
+                // print current cell
+                System.out.print(" " + field[i][j]);
+            }
+            System.out.println(); // line break
+        }
+
+        scanner.close();
     }
-    System.out.println(); // line break
 }
 ```
 
@@ -130,9 +151,16 @@ for (int i = 0; i < field.length;i++){ // iterate through lines
 // C# 
 
 int[,] field = new int[3,3];
-for (int i = 0; i <field.Length;i++){
-    for (int j = 0; j < field[i].length; j++){
-        Console.Write(" " + field[i,j] + " ")
+for (int i = 0; i <field.GetLength(0);i++){
+    for (int j = 0; j < field.GetLength(1); j++){
+        Console.WriteLine("Geben Sie bitte eine Zahl ein:");
+        field[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+// Inhalt des Arrays ausgeben
+for (int i = 0; i <field.GetLength(0);i++){
+    for (int j = 0; j < field.GetLength(1); j++){
+        Console.Write(" " + field[i,j])
     }
     Console.WriteLine();
 }
