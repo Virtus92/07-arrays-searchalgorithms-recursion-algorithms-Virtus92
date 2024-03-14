@@ -12,9 +12,9 @@ Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 
 ## Die wichtigsten Eigenschaften eines Arrays
 
-* **fixe Länge**, die bei der Initialisierung definiert wird
-* der Zugriff auf Elemente erfolgt anhand eines Index (Position im Array), so ist die **Reihenfolge der Elemente wichtig**
-* das **erste Element** befindet sich immer an der **Position 0** (Index == 0)
+* **Fixe Länge**, die bei der Initialisierung definiert wird
+* Der Zugriff auf Elemente erfolgt anhand eines Index (Position im Array), so ist die **Reihenfolge der Elemente wichtig**
+* Das **erste Element** befindet sich immer an der **Position 0** (Index == 0)
 
 ![Array und Indices](img/07-01-Array-Indices.png)
 
