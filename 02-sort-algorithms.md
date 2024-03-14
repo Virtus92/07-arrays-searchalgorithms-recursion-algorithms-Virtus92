@@ -2,7 +2,7 @@
 
 Wie im vorigen Kapitel gesehen, spielt die Reihenfolge der Elemente in einem Array eine Rolle. Da die Werte aber manchmal sortiert werden müssen, damit man sie besser verwenden kann, ist es wichtig, zu lernen, wie man Arrays sortiert.
 
-Unser stehen mehrere bekannte Algorithmen zur Verfügung. Die einen sind von der Funktionslogik her, leicht zu verstehen, benötigen aber meist steigt Speicherbedarf oder die Arbeitsdauer exponentiell an, je größer das Array. Andere sind von der Logik her nicht trivial, sind aber bei größeren Arrays sehr schnell und/oder benötigen wenig Speicher. 
+Uns stehen mehrere bekannte Algorithmen zur Verfügung. Die einen sind von der Funktionslogik her leicht zu verstehen, benötigen aber meist hohen Speicherbedarf, oder die Arbeitsdauer steigt exponentiell mit der größe des Array an. Andere sind von der Logik her nicht trivial, sind aber bei größeren Arrays sehr schnell und/oder benötigen wenig Speicher. 
 
 Folgende sind die bekanntesten:
 - Selection Sort
