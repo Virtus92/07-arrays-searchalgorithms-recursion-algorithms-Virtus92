@@ -2,10 +2,10 @@
 
 ## Lernziele
 Der:die Teilnehmer:in kann nach erfolgreicher Absolvierung dieses Themas:
-- erklären, was Arrays sind
+- Erklären, was Arrays sind
 - Arrays in Programmen anwenden
-- die verschiedenen Sortieralgorithmen erklären und darstellen, wann diese sinnvoll anzuwenden sind
-- erste rekursive Programme schreiben
+- Die verschiedenen Sortieralgorithmen erklären und darstellen, wann diese sinnvoll anzuwenden sind
+- Erste rekursive Programme schreiben
 
 ## Inhaltsverzeichnis
 
