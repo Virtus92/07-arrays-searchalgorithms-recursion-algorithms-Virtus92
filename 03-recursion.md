@@ -2,7 +2,7 @@
 
 ![Video-Rekursion](img/07-14-video-recursion.png)
 
-Dieses Bild stellt dar, wie man in einem Video/ein Foto eine endlose Rekursion: man filmt/fotografiert den Bildschirm, der darstellt, was man gerade filmt/fotografiert... ;-)
+Dieses Bild stellt dar, wie man in einem Video/einem Foto eine endlose Rekursion erkennt: man filmt/fotografiert den Bildschirm, der darstellt, was man gerade filmt/fotografiert... ;-)
 
 **Wozu Rekursion?**
 Grundsätzlich sind alle Fälle iterativ zu lösen, allerdings macht es manchmal Sinn den Weg über die Rekursion zu überlegen, weil z.B. der Quellcode dadurch deutlich lesbarer und kürzer wird.
@@ -70,7 +70,7 @@ public static String getLuxuryVilla() {
 
 Welches Problem besteht hier?
 
-Die Methode `fulfillThreeWishes()` ruft sich selbst auf, also endet das Programm nie (bzw. erst wenn der Fehler Stack-Overflow ausgeworfen wird)
+Die Methode `fulfillThreeWishes()` ruft sich selbst auf, also endet das Programm nie (bzw. erst wenn der Fehler Stack-Overflow ausgeworfen wird, da es unweigerlich zu einem Speicherüberlauf kommen wird).
 
 ## Definition
 
