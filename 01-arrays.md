@@ -1,12 +1,12 @@
-# Arrays und Collections
+# Arrays
 
 ## Grundsätzliches
 
-Mit den bisherigen Datentypen, die wir kennen, können wir lediglich einzelne Werte in Variablen speichern: Sei es ein Geburtstdatum oder ein Name...
+Mit den bisherigen Datentypen, die wir kennen, können wir lediglich einzelne Werte in Variablen speichern: Sei es ein Geburtsdatum oder ein Name...
 
-Oft ist es aber notwendig, sich mehrere Werte zu merken: zB eine Bestenliste bei einem Rennen. 
+Oft ist es aber notwendig, sich mehrere Werte zu merken: zB eine Bestenliste bei einem Rennen...
 
-Will man also mehrere Datensätze eines bestimmten Datentyps speichern, braucht man eine sogennante Collection. Eine Collection ist ein Behälter für eine Ansammlung von Daten desselben Datentyps.
+Will man also mehrere Datensätze eines bestimmten Datentyps speichern, braucht man eine sogenannte Collection. Eine Collection ist ein Behälter für eine Ansammlung von Daten desselben Datentyps.
 
 Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 
@@ -20,13 +20,15 @@ Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 
 ## Arrays Java / C#
 
+**Array** ist ein Datentyp, der verwendet wird, um mehrere Elemente des gleichen Datentyps zu speichern. Sie bieten eine praktische Möglichkeit, Daten zu organisieren und zu verwalten. Hier sind Erklärungen zu Arrays in Java und C# mit anschaulichen Codebeispielen:
+
 ### Array deklarieren
 
-In höheren Programmierprachen kann ein Array auf folgende Art und Weisen deklariert werden:
+In höheren Programmiersprachen kann ein Array auf folgende Art und Weisen deklariert werden:
 
 #### Ein Array aus ganzen Zahlen mit Länge 8
 
-```Java
+```java
 // Java
 
 int[] intArray = new int[8];
@@ -40,7 +42,7 @@ int[] intArray = new int[8];
 
 #### Ein Array aus Strings mit 3 Elementen: "Hello", "World" und "!"
 
-```Java
+```java
 // Java
 
 String[] stringArray = {"Hello", "World", "!"};
@@ -56,11 +58,16 @@ string[] stringArray = ["Hello", "World", "!"];
 
 Um nun auf ein Element des Arrays zuzugreifen wird der Index verwendet. Wie oben angeführt ist das erste Element an der Position 0. Das Element mit dem Index 3 erhalte ich mit folgender Zeile:
 
-```Java
+```java
 // Java
+public class Main {
+    public static void main(String[] args) {
 
-int[] intArray = {1,2,3,4,5,6,7,8};
-System.out.println(intArray[3]); // Hier wird die Zahl mit dem Index 3 ausgegeben (ACHTUNG! In einem Array ist das erste Element am Index 0!!!), also wird hier die Zahl 4 ausgegeben!
+        int[] intArray = {1, 2, 3, 4, 5, 6, 7, 8};
+        System.out.println(intArray[3]); // Hier wird die Zahl mit dem Index 3 ausgegeben. 
+        // ACHTUNG! In einem Array ist das erste Element am Index 0!!!, also wird hier die Zahl 4 ausgegeben!
+    }
+}
 ```
 
 ```csharp
@@ -80,10 +87,15 @@ Verändern kann man den Wert auf dieselbe Weise:
 
 ```Java
 // Java
+public class Main {
+    public static void main(String[] args) {
 
-int[] intArray = new int[8];
+        int[] intArray = new int[8];
 
-intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
+        intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
+        System.out.println(intArray[0]);
+    }
+}
 ```
 
 ```csharp
@@ -92,27 +104,26 @@ intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
 int[] intArray = new int[8];
 
 intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
+Console.WriteLine(intArray[0]);
 ```
 
-## 2-Dimensionale Arrays
+## Mehrdimensionale Arrays
 
 Ein `String[]` ist auch ein Datentyp genauso wie String und int. Da man aus einem String ein Array aus Strings machen kann, kann man auch aus einem String[] ein Array aus String[] machen.
 
 ```Java
 // Java
-
 String[][] twoDimensionalArray = new String[3][5];
 ```
 
 ```csharp
 // C#
-
 string[,] twoDimensionalArray = new string[3,5];
 ```
 
 Ein 2-dimensionales Array kann zur Speicherung eines Spielfeldes eingesetzt werden. 
 
-z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dies auf der Konsole aus.
+z.B.: Speichere ein 3x3 Feld aus Zahlen und gib dieses auf der Konsole aus.
 
 ```Java
 // Java
