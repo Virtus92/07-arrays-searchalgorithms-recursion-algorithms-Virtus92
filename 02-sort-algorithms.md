@@ -1,8 +1,6 @@
 # Sortieralgorithmen
 
-Wie im vorigen Kapitel gesehen, spielt die Reihenfolge der Elemente in einem Array eine Rolle. Da die Werte aber manchmal sortiert werden müssen, damit man sie besser verwenden kann, ist es wichtig, zu lernen, wie man Arrays sortiert.
-
-Uns stehen mehrere bekannte Algorithmen zur Verfügung. Die einen sind von der Funktionslogik her leicht zu verstehen, benötigen aber meist hohen Speicherbedarf, oder die Arbeitsdauer steigt exponentiell mit der größe des Array an. Andere sind von der Logik her nicht trivial, sind aber bei größeren Arrays sehr schnell und/oder benötigen wenig Speicher. 
+Sortieralgorithmen sind Algorithmen, die verwendet werden, um eine Liste von Elementen in einer bestimmten Reihenfolge zu ordnen. Es gibt verschiedene Sortieralgorithmen, die jeweils unterschiedliche Vor- und Nachteile haben. Hier sind Erklärungen zu einigen häufig verwendeten Sortieralgorithmen in Java und C#:
 
 Folgende sind die bekanntesten:
 - Selection Sort
@@ -13,28 +11,38 @@ Folgende sind die bekanntesten:
 
 ## Selection Sort
 
-Ein Array wird immer in den bereits sortierten Teil S und den unsortierten Teil U geteilt.
-Der kleinste Wert im unsortierten Array U wird mit dem ersten Wert im unsortierten Array U vertauscht. Dadurch gehört dieses vorgeschobene Element nun zum sortierten Teil.
+Selection Sort ist ein einfacher Sortieralgorithmus, der wiederholt das kleinste Element in der Liste auswählt und an die erste unsortierte Position platziert. Er hat eine Zeitkomplexität von O(n^2) und eignet sich gut für kleine Listen oder wenn zusätzlicher Speicherplatz knapp ist.
 Zu Beginn ist das gesamte Array unsortiert.
 
 ![Selection Sort - Beispiel 1](img/07-03-Selection%20Sort%201.png)
 
 ![Selection Sort - Beispiel 2](img/07-04-Selection%20Sort%202.png)
 
+### Verwendungszwecke:
+
+* Wenn eine einfache Implementierung gewünscht wird.
+* Wenn die Liste klein ist oder der Speicher begrenzt ist.
+* Wenn man sich um die Anzahl der Tauschoperationen nicht kümmert, da Selection Sort immer die gleiche Anzahl von Tauschoperationen benötigt, unabhängig von der Eingabe.
+
+
 ## Insertion Sort
 
-Ein Array wird immer in den bereits relativ(intern) sortierten Teil S und den unsortierten Teil U geteilt .
-Schritt für Schritt wird das erste Element des unsortierten Teils gewählt und an die richtige Stelle im sortierten Array geschoben.
+Insertion Sort ist ein einfacher Sortieralgorithmus, der das Einfügen von Elementen in die sortierte Teilmenge eines Arrays oder einer Liste durchläuft. Er hat eine Zeitkomplexität von O(n^2), aber in der Praxis ist er effizienter als Selection Sort und Bubble Sort für kleine Listen.
 Zu Beginn ist das gesamte Array unsortiert.
 
 ![Insertion Sort - Beispiel 1](img/07-05-Insertion%20Sort%201.png)
 
 ![Insertion Sort - Beispiel 2](img/07-06-Insertion%20Sort%202.png)
 
+### Verwendungszwecke:
+
+* Wenn die Liste bereits teilweise sortiert ist oder nur wenige Elemente unsortiert sind.
+* Wenn zusätzlicher Speicherplatz knapp ist, da Insertion Sort im Ort arbeitet.
+* Wenn Stabilität wichtig ist, da Insertion Sort stabiler ist als Selection Sort.
+
 ## Bubble Sort
 
-Von links beginnend werden immer zwei aufeinander folgende Elemente im Array verglichen und vertauscht, falls deren Reihenfolge nicht stimmt. 
-Dadurch ist nach der ersten Iteration das größte Element ganz rechts, nach der zweiten Iteration sind die beiden größten Elemente rechts.
+Bubble Sort ist ein einfacher Sortieralgorithmus, der benachbarte Elemente vergleicht und sie vertauscht, wenn sie in der falschen Reihenfolge sind. Er hat eine Zeitkomplexität von O(n^2) und ist weniger effizient als Insertion Sort und Selection Sort.
 
 ![Bubble Sort - Beispiel 1](img/07-07-Bubble%20Sort%201.png)
 
@@ -46,21 +54,38 @@ Dadurch ist nach der ersten Iteration das größte Element ganz rechts, nach der
 
 ![Bubble Sort - Beispiel 5](img/07-11-Bubble%20Sort%205.png)
 
+### Verwendungszwecke:
+
+* Wenn eine einfache Implementierung erforderlich ist und die Liste bereits fast sortiert ist (in diesem Fall ist Bubble Sort schnell).
+* Wenn man sich nicht um die Effizienz kümmert und die Liste sehr klein ist.
+
 ## Merge Sort
 
-Ein Array wird in kleinere Arrays zerlegt, diese werden in sich sortiert und in sortierter Reihenfolge zusammengeführt (beim Merge).
+Merge Sort ist ein effizienter, stabiler Sortieralgorithmus, der auf dem Prinzip **"Teile und herrsche"** basiert. Er teilt die Liste in kleinere Teile, sortiert sie rekursiv und fusioniert dann die sortierten Teile zurück. Er hat eine Zeitkomplexität von O(n log n) und ist effizient für große Listen.
 
 ![Merge Sort - Beispiel 1](img/07-12-Merge%20Sort%201.png)
 
 ![Merge Sort - Beispiel 2](img/07-13-Merge%20Sort%202.png)
 
+### Verwendungszwecke:
+
+* Wenn eine effiziente Sortierung für große Listen benötigt wird.
+* Wenn Stabilität wichtig ist, da Merge Sort stabil ist.
+* Wenn zusätzlicher Speicherplatz kein Problem ist, da Merge Sort zusätzlichen Speicherplatz benötigt.
+
 ## Quick Sort
 
-Wie beim Merge Sort wird beim Quick Sort das Array geteilt und die Sublisten werden sortiert. Beim Teilen wird dabei ein Pivotelement gewählt und alle Elemente, die kleiner als das Pivotelement sind, in die linke Hälfte und jene, die größer sind, in die rechte Hälfte getauscht. 
-Diese Sortierung wird auf alle Sublisten wieder angewandt bis die vollständige Liste sortiert ist.
+Quick Sort ist ein effizienter, instabiler Sortieralgorithmus, der auf dem Prinzip "Teile und herrsche" basiert. Er wählt ein Pivot-Element aus der Liste aus, teilt die Liste in Elemente kleiner als das Pivot-Element und Elemente größer als das Pivot-Element auf und sortiert dann rekursiv die beiden Teillisten. Er hat eine durchschnittliche Zeitkomplexität von O(n log n) und ist in der Praxis einer der schnellsten Sortieralgorithmen.
 
 ## animierte Visualisierung von Sortieralgorithmen 
 
 [animierter Vergleich von Sortieralgorithmen](https://www.toptal.com/developers/sorting-algorithms)
+
+### Verwendungszwecke:
+
+* Wenn eine schnelle Sortierung für große Listen benötigt wird.
+* Wenn zusätzlicher Speicherplatz kein Problem ist, da Quick Sort im Ort arbeitet.
+* Wenn man sich nicht um Stabilität kümmert, da Quick Sort instabil ist.
+
 
 Zurück zur [Startseite](README.md)

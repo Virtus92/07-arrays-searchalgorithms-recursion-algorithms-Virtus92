@@ -4,73 +4,17 @@
 
 Dieses Bild stellt dar, wie man in einem Video/einem Foto eine endlose Rekursion erkennt: man filmt/fotografiert den Bildschirm, der darstellt, was man gerade filmt/fotografiert... ;-)
 
-**Wozu Rekursion?**
-Grundsätzlich sind alle Fälle iterativ zu lösen, allerdings macht es manchmal Sinn den Weg über die Rekursion zu überlegen, weil z.B. der Quellcode dadurch deutlich lesbarer und kürzer wird.
+## Wozu Rekursion?
 
-Ein Paradebeispiel für die Rekursion ist das Durchlaufen eines Baumes. Ein weiterer Paradebeispiel sind die Sortieralgorithmen MergeSort und Quicksort.
+Grundsätzlich sind alle Fälle iterativ lösbar, allerdings macht es manchmal Sinn den Weg über die Rekursion zu überlegen, weil z.B. der Quellcode dadurch deutlich lesbarer und kürzer wird.
 
-Da die Rekursion darauf beruht, dass sich eine Methode selbst aufruft, würde dies zu einem endlosen Programm führen. Also liegt der Kern der Rekursion in der Abbruchbedingung! Diese muss gut überlegt sein, um sicherzustellen, dass das Programm aus der Rekursion kommt.
+Ein Paradebeispiel für die Rekursion ist das Durchlaufen eines Baumes. Ein weiteres Paradebeispiel sind die Sortieralgorithmen MergeSort und Quicksort.
+
+Da die Rekursion darauf beruht, dass sich eine Methode selbst aufruft, würde dies zu einem endlosen Programm führen. Also liegt der Kern der Rekursion in der Abbruchbedingung! Diese muss gut überlegt sein, um sicherzustellen, dass das Programm aus der Rekursion herauskommt.
 
 Würde das Programm nicht aus der Rekursion herauskommen, würde es zu einem Memory-Overflow kommen. Mittlerweile sichern sich Programmiersprachen ab, indem erkannt wird, ob man sich in einer endlosen Rekursion befindet und brechen das Programm mit einem Fehler ab.
 
-Im Vergleich zu einer iterativen Schleife, verbraucht Rekursion immer mehr Speicher, weil die Variablen in der Methode bei jeder Rekursion neu instanziert werden, aber nicht mehr freigegeben werden, solange die Rekursion nicht endet. In iterativen Schleifen werden die Variablen, die in der Schleife instanziert werden, immer nach Ende der Iteration wieder freigegeben.
-
-## Einführendes Beispiel
-
-Angenommen wir treffen auf einem Spaziergang im Wald eine Fee. Wir haben
-das Glück des Lebens getroffen, denn wir haben drei Wünsche frei. Was
-würden wir uns wünschen?
-
-![Waldfee und Baum](img/07-15-fairy.png)
-
-Hier kennen wir einen Trick, sicher schon vom Kindergarten :)
-Wir wünschen uns beim dritten Wunsch einfach nochmal unsere drei
-Wünsche. Angenommen wir wünschen uns zuerst mal einen Ferrari und eine
-Luxusvilla, weil wir so bescheiden sind. Wichtigere Angelegenheiten wie etwa
-Weltfrieden, können wir uns ja alles noch wünschen, da wir ja mehr als genug
-Wünsche zur Verfügung haben ;)
-
-Wenn man dieses Beispiel programmiert, würde es wie folgt aussehen:
-
-```Java
-// Java
-
-public static void fulfillThreeWishes() {
-    System.out.println(getFerrari());
-    System.out.println(getLuxuryVilla());
-    fulfillThreeWishes();
-}
-
-public static String getFerrari() {
-    return "Ferrari";
-}
-
-public static String getLuxuryVilla() {
-    return "Luxury Villa";
-}
-```
-
-```csharp
-// C#
-
-public static void fulfillThreeWishes() {
-    Console.WriteLine(getFerrari());
-    Console.WriteLine(getLuxuryVilla());
-    fulfillThreeWishes();
-}
-
-public static String getFerrari() {
-    return "Ferrari";
-}
-
-public static String getLuxuryVilla() {
-    return "Luxury Villa";
-}
-```
-
-Welches Problem besteht hier?
-
-Die Methode `fulfillThreeWishes()` ruft sich selbst auf, also endet das Programm nie (bzw. erst wenn der Fehler Stack-Overflow ausgeworfen wird, da es unweigerlich zu einem Speicherüberlauf kommen wird).
+Im Vergleich zu einer iterativen Schleife, verbraucht Rekursion immer mehr Speicher, weil die Variablen in der Methode bei jeder Rekursion neu instanziiert werden, aber nicht mehr freigegeben werden, solange die Rekursion nicht endet. In iterativen Schleifen werden die Variablen, die in der Schleife instanziiert werden, immer nach Ende der Iteration wieder freigegeben.
 
 ## Definition
 
@@ -144,7 +88,7 @@ public static int factorial(int n) {
 
 ## Call Stack
 
-Um Rekursion zu verstehen, ist es wichtig sich bewusst zu machen, wie der Call Stack (Aufrufstapel) funktioniert. Den Stack haben wir als ADS schon kennengelernt.
+Um Rekursion zu verstehen, ist es wichtig sich bewusst zu machen, wie der Call Stack (Aufrufstapel) funktioniert.
 
 Hier dient er dazu, den Speicherbereich für Funktionsaufrufe dynamisch zu verwalten. Dieser Speicherbereich kann anwachsen und wieder schrumpfen.
 
