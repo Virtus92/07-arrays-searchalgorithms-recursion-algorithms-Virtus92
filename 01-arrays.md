@@ -91,8 +91,8 @@ public class Main {
     public static void main(String[] args) {
 
         int[] intArray = new int[8];
-
-        intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
+        // Der Index des ersten Elements ist immer 0!
+        intArray[0] = 4; // Der Wert des Elements an der Position 0 wird auf 4 gesetzt.
         System.out.println(intArray[0]);
     }
 }
@@ -102,14 +102,16 @@ public class Main {
 // C# 
 
 int[] intArray = new int[8];
-
-intArray[0] = 4; // Der Index des ersten Elements ist immer 0!
+// Der Index des ersten Elements ist immer 0!
+intArray[0] = 4; // Der Wert des Elements an der Position 0 wird auf 4 gesetzt.
 Console.WriteLine(intArray[0]);
 ```
 
 ## Mehrdimensionale Arrays
 
-Ein `String[]` ist auch ein Datentyp genauso wie String und int. Da man aus einem String ein Array aus Strings machen kann, kann man auch aus einem String[] ein Array aus String[] machen.
+Ein `String[]` ist auch ein Datentyp genauso wie String und int. Man kann also ein Array von `String[]` erstellen, um zum Beispiel eine zweidimensionale Tabelle abzubilden.
+
+**Beispiele**:
 
 ```Java
 // Java
