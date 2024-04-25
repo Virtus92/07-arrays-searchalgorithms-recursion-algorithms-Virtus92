@@ -1,6 +1,6 @@
 # Rekursion
 
-![Video-Rekursion](img/07-14-video-recursion.png)
+![Video-Rekursion](../img/07-14-video-recursion.png)
 
 Dieses Bild stellt dar, wie man in einem Video/einem Foto eine endlose Rekursion erkennt: man filmt/fotografiert den Bildschirm, der darstellt, was man gerade filmt/fotografiert... ;-)
 
@@ -42,7 +42,7 @@ Die Fakultät (Faktorielle) ist in der Mathematik eine Funktion, die einer
 natürlichen Zahl das Produkt aller natürlichen Zahlen (ohne Null) kleiner und
 gleich dieser Zahl zuordnet.
 
-![Fakultät in Zahlen](img/07-16-factorial.png)
+![Fakultät in Zahlen](../img/07-16-factorial.png)
 
 Diese Funktion ist von Natur aus rekursiv, warum?
 Man kann die Fakultät von n berechnen, indem man zuerst die Fakultät von (n-1) berechnet. Daher bildet die Berechnung von (n-1)! ein Subproblem, das wir lösen müssen, um n zu berechnen! 
@@ -54,7 +54,7 @@ z.B. kann
 
 Die formale rekursive Definition lautet:
 
-![Fakultät-Formel](img/07-17-factorial-formula.png)
+![Fakultät-Formel](../img/07-17-factorial-formula.png)
 
 Programmiert schaut die Implementierung folgendermaßen aus:
 
@@ -97,7 +97,7 @@ Der Compiler, der diesen Stack verwaltet, legt hier alle Daten ab, die er zur Ve
 Wenn eine Funktion aufgerufen wird, erweitert der Compiler den Stack um einen Datenblock(Stack-Frame). In diesem Datenblock werden die Parameter, die lokalen Variablen und die Rücksprungadresse zur aufrufenden Funktion angelegt. Der Datenblock bleibt so lange bestehen, bis diese Funktion wieder endet. Wird in ihm aber eine weitere Funktion aufgerufen, wird ein weiterer
 Datenblock auf den aktuellen gepackt.
 
-![Fakultät - Call Stack](img/07-18-factorial-call-stack.png)
+![Fakultät - Call Stack](../img/07-18-factorial-call-stack.png)
 
 ## Rekursiv oder Iterativ
 
@@ -198,7 +198,7 @@ Die Fibonacci-Folge ist ein anderer Klassiker für die Rekursion. Sie ist eine
 unendliche Folge von Zahlen, bei der sich die jeweils folgende Zahl durch
 Addition ihrer beiden vorherigen Zahlen ergibt:
 
-![Fibonacci-Folge](img/07-19-fibonacci.png)
+![Fibonacci-Folge](../img/07-19-fibonacci.png)
 
 Implementiert sieht die Fibonacci-Folge wie folgt aus:
 
@@ -248,4 +248,4 @@ public static int sumArray(int[] array, int index) {
 
 Am besten zeichnest du den Rekursionsbaum und den Callstack, um besser zu verstehen, was dieses Programm genau macht.
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)

@@ -80,4 +80,4 @@ Eine gute Schritt-für-Schritt-Visualisierung zu Sortieralgorithmen findest du a
 - Der:die Teilnehmer:in kann den Code und den Algorithmus bzw. wann dieser einen Sinn macht erklären 
 - Der Code ist in GITHub gepuscht
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)

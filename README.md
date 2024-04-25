@@ -9,8 +9,8 @@ Der:die Teilnehmer:in kann nach erfolgreicher Absolvierung dieses Themas:
 
 ## Inhaltsverzeichnis
 
-1. [Problemstellung](00-problemstellung.md)
-1. [Arrays](01-arrays.md)
-1. [Sortieralgorithmen](02-sort-algorithms.md)
-1. [Rekursion](03-recursion.md)
-1. [Aufgabenstellung](XX-aufgabenstellung.md)
+1. [Problemstellung](content/00-problemstellung.md)
+1. [Arrays](content/01-arrays.md)
+1. [Sortieralgorithmen](content/02-sort-algorithms.md)
+1. [Rekursion](content/03-recursion.md)
+1. [Aufgabenstellung](content/XX-aufgabenstellung.md)

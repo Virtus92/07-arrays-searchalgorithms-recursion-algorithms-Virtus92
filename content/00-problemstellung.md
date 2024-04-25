@@ -6,4 +6,4 @@ Weiters lernen wir in diesem Kapitel wie wir Arrays sortieren können und wie wi
 
 Zum Schluss werden wir sehen, dass es auch möglich ist, eine Methode zu schreiben, die sich selbst aufruft. Das nennen wir Rekursion. Wir werden sehen, wie dies umzusetzen ist bzw. worauf dabei zu achten ist und wann es Sinn macht eine Methode rekursiv statt iterativ zu schreiben.
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)

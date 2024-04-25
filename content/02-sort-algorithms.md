@@ -14,9 +14,9 @@ Folgende sind die bekanntesten:
 Selection Sort ist ein einfacher Sortieralgorithmus, der wiederholt das kleinste Element in der Liste auswählt und an die erste unsortierte Position platziert. Er hat eine Zeitkomplexität von O(n^2) und eignet sich gut für kleine Listen oder wenn zusätzlicher Speicherplatz knapp ist.
 Zu Beginn ist das gesamte Array unsortiert.
 
-![Selection Sort - Beispiel 1](img/07-03-Selection%20Sort%201.png)
+![Selection Sort - Beispiel 1](../img/07-03-Selection%20Sort%201.png)
 
-![Selection Sort - Beispiel 2](img/07-04-Selection%20Sort%202.png)
+![Selection Sort - Beispiel 2](../img/07-04-Selection%20Sort%202.png)
 
 ### Verwendungszwecke:
 
@@ -30,9 +30,9 @@ Zu Beginn ist das gesamte Array unsortiert.
 Insertion Sort ist ein einfacher Sortieralgorithmus, der das Einfügen von Elementen in die sortierte Teilmenge eines Arrays oder einer Liste durchläuft. Er hat eine Zeitkomplexität von O(n^2), aber in der Praxis ist er effizienter als Selection Sort und Bubble Sort für kleine Listen.
 Zu Beginn ist das gesamte Array unsortiert.
 
-![Insertion Sort - Beispiel 1](img/07-05-Insertion%20Sort%201.png)
+![Insertion Sort - Beispiel 1](../img/07-05-Insertion%20Sort%201.png)
 
-![Insertion Sort - Beispiel 2](img/07-06-Insertion%20Sort%202.png)
+![Insertion Sort - Beispiel 2](../img/07-06-Insertion%20Sort%202.png)
 
 ### Verwendungszwecke:
 
@@ -44,15 +44,15 @@ Zu Beginn ist das gesamte Array unsortiert.
 
 Bubble Sort ist ein einfacher Sortieralgorithmus, der benachbarte Elemente vergleicht und sie vertauscht, wenn sie in der falschen Reihenfolge sind. Er hat eine Zeitkomplexität von O(n^2) und ist weniger effizient als Insertion Sort und Selection Sort.
 
-![Bubble Sort - Beispiel 1](img/07-07-Bubble%20Sort%201.png)
+![Bubble Sort - Beispiel 1](../img/07-07-Bubble%20Sort%201.png)
 
-![Bubble Sort - Beispiel 2](img/07-08-Bubble%20Sort%202.png)
+![Bubble Sort - Beispiel 2](../img/07-08-Bubble%20Sort%202.png)
 
-![Bubble Sort - Beispiel 3](img/07-09-Bubble%20Sort%203.png)
+![Bubble Sort - Beispiel 3](../img/07-09-Bubble%20Sort%203.png)
 
-![Bubble Sort - Beispiel 4](img/07-10-Bubble%20Sort%204.png)
+![Bubble Sort - Beispiel 4](../img/07-10-Bubble%20Sort%204.png)
 
-![Bubble Sort - Beispiel 5](img/07-11-Bubble%20Sort%205.png)
+![Bubble Sort - Beispiel 5](../img/07-11-Bubble%20Sort%205.png)
 
 ### Verwendungszwecke:
 
@@ -63,9 +63,9 @@ Bubble Sort ist ein einfacher Sortieralgorithmus, der benachbarte Elemente vergl
 
 Merge Sort ist ein effizienter, stabiler Sortieralgorithmus, der auf dem Prinzip **"Teile und herrsche"** basiert. Er teilt die Liste in kleinere Teile, sortiert sie rekursiv und fusioniert dann die sortierten Teile zurück. Er hat eine Zeitkomplexität von O(n log n) und ist effizient für große Listen.
 
-![Merge Sort - Beispiel 1](img/07-12-Merge%20Sort%201.png)
+![Merge Sort - Beispiel 1](../img/07-12-Merge%20Sort%201.png)
 
-![Merge Sort - Beispiel 2](img/07-13-Merge%20Sort%202.png)
+![Merge Sort - Beispiel 2](../img/07-13-Merge%20Sort%202.png)
 
 ### Verwendungszwecke:
 
@@ -88,4 +88,4 @@ Quick Sort ist ein effizienter, instabiler Sortieralgorithmus, der auf dem Prinz
 * Wenn man sich nicht um Stabilität kümmert, da Quick Sort instabil ist.
 
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)

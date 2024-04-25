@@ -16,7 +16,7 @@ Es gibt mehrere Arten von Collections. In diesem Kapitel stellen wir Arrays vor.
 * Der Zugriff auf Elemente erfolgt anhand eines Index (Position im Array), so ist die **Reihenfolge der Elemente wichtig**
 * Das **erste Element** befindet sich immer an der **Position 0** (Index == 0)
 
-![Array und Indices](img/07-01-Array-Indices.png)
+![Array und Indices](../img/07-01-Array-Indices.png)
 
 ## Arrays Java / C#
 
@@ -79,7 +79,7 @@ Console.WriteLine(intArray[3]);
 
 ACHTUNG! Wenn man einen Zugriff mit einem Index größer oder gleich der Größe des Arrays versucht wird ein Fehler, eine sogenannte Exception, ausgeworfen, da man versucht, auf ein Element zuzugreifen, das nicht im Array zu finden ist.
 
-![Array Out of Bound](img/07-02-Array-OutOfBound.png)
+![Array Out of Bound](../img/07-02-Array-OutOfBound.png)
 
 ### Wert eines Elements ändern
 
@@ -179,4 +179,4 @@ for (int i = 0; i <field.GetLength(0);i++){
 }
 ```
 
-Zurück zur [Startseite](README.md)
+Zurück zur [Startseite](../README.md)
