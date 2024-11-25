@@ -3,8 +3,10 @@ import java.util.Random;
 
 public class BingoCardGenerator {
 
-    private static void generateCard(ArrayList bingoTemp, String[][] bingoCard) {
+    private static String[][] generateCard() {
         Random r = new Random();
+        String[][] bingoCard = new String[5][5];
+        ArrayList<Integer> bingoTemp = new ArrayList<>();
         int[] intervals = {16, 31, 46, 61, 76};
         int start = 1;
 
@@ -31,20 +33,15 @@ public class BingoCardGenerator {
                 }
             }
         }
+        return bingoCard;
     }
     public static void main(String[] args) {
-        String[][] bingoCard = new String[5][5];
-        ArrayList<Integer> bingoTemp = new ArrayList<>();
 
-        generateCard(bingoTemp, bingoCard);
+        String[][] bingoCard = generateCard();
 
         for (int x = 0; x < bingoCard.length; x++) {
             for (int y = 0; y < bingoCard.length; y++) {
-                if (x == 2 && y == 2) {
-                    System.out.printf("%4s", " ");
-                } else {
                     System.out.printf("%4s", bingoCard[x][y]);
-                }
             }
             System.out.println();
         }
