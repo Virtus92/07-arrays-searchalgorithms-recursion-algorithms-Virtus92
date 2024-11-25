@@ -1,33 +1,43 @@
 import java.util.Random;
 
 public class InsertionSort {
+    static Random r = new Random();
     public static void main(String[] args) {
-        Random r = new Random();
         int[] chaos = new int[10];
 
+        randomizeList(chaos);
+
+        System.out.println("Unsortierte Liste:");
+        print(chaos);
+
+        System.out.println("\n\nSortierte Liste: ");
+        sortList(chaos);
+        print(chaos);
+    }
+
+    private static void randomizeList(int[] chaos) {
         for (int i = 0; i < chaos.length; i++) {
             chaos[i] = r.nextInt(100);
         }
+    }
 
-
-        System.out.println("Unsortierte Liste: ");
-        for (int chao : chaos) {
-            System.out.printf("%4d", chao);
-        }
-
-        System.out.println("\n\nSortierte Liste: ");
-        for (int i = 0; i < chaos.length; i++) {
-            for (int j = 0; j < chaos.length - 1; j++) {
-                if (chaos[j] > chaos[j + 1]) {
-                    int temp = chaos[j+1];
-                    chaos[j+1] = chaos[j];
-                    chaos[j] = temp;
+    private static void sortList(int[] chaos) {
+        int temp;
+        for (int i = 1; i < chaos.length; i++) {
+            for (int j = i; j > 0; j--) {
+                temp = chaos[j];
+                if (chaos[j-1] > chaos[j]) {
+                    chaos[j] = chaos[j-1];
+                    chaos[j-1] = temp;
                 }
+
             }
         }
+    }
+
+    private static void print(int[] chaos) {
         for (int i = 0; i < chaos.length; i++) {
             System.out.printf("%4d", chaos[i]);
         }
-
     }
 }
