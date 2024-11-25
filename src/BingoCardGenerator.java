@@ -20,7 +20,6 @@ public class BingoCardGenerator {
             }
             start = end;
         }
-        bingoTemp.sort(null);
 
         int counter = 0;
         for (int i = 0; i < bingoCard[0].length; i++) {

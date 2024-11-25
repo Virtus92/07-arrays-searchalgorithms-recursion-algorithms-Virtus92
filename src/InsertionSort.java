@@ -2,6 +2,7 @@ import java.util.Random;
 
 public class InsertionSort {
     static Random r = new Random();
+
     public static void main(String[] args) {
         int[] chaos = new int[10];
 
@@ -24,14 +25,13 @@ public class InsertionSort {
     private static void sortList(int[] chaos) {
         int temp;
         for (int i = 1; i < chaos.length; i++) {
-            for (int j = i; j > 0; j--) {
-                temp = chaos[j];
-                if (chaos[j-1] > chaos[j]) {
-                    chaos[j] = chaos[j-1];
-                    chaos[j-1] = temp;
-                }
-
+            int j = i;
+            temp = chaos[i];
+            while (j > 0 && chaos[j - 1] > temp) {
+                chaos[j] = chaos[j - 1];
+                j--;
             }
+            chaos[j] = temp;
         }
     }
 
